@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<div lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>$Title$</title>
+</head>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1></h1>
+            <div>
+                <a href="/" class="btn btn-success btn-lg active" role="button" aria-pressed="true" >index</a>
+                <a href="/create" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">add</a>
+                <a href="/update" class="btn btn-success btn-lg active" role="button" aria-pressed="true">update</a>
+                <a href="/delete" class="btn btn-success btn-lg active" role="button" aria-pressed="true" >delete</a>
+                <br>
+
+<form method="post" action="/create" >
+    <label for="sognekode">sognekode:</label>
+    <input type="number" id="sognekode" name="sognekode" required><br><br>
+    <label for="navn">navn:</label>
+    <input type="text" id="navn" name="navn" required><br><br>
+    <label for="kommune">kommune:</label>
+    <input type="number" id="kommune" name="kommune" required><br><br>
+    <label for="smittetryk">smittetryk:</label>
+    <input type="number" id="smittetryk" name="smittetryk" required><br><br>
+    <label for="nedlukningStart">nedlukningStart:</label>
+    <input type="date" id="nedlukningStart" name="nedlukningsSlutDato"><br><br>
+    <input type="submit" value="Submit">
+
+
+
+
+</form>
+</div>
+        </div>
+    </div>
+</div>
+</html>
