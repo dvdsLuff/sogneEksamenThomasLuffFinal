@@ -2,7 +2,7 @@ package com.example.sogneeksamen.model;
 
 import javax.persistence.*;
 
-import com.example.sogneeksamen.model.Sogne;
+
 
 import java.util.Set;
 

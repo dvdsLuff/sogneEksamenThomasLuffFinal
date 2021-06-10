@@ -1,6 +1,6 @@
 package com.example.sogneeksamen.model;
 
-import org.springframework.boot.context.properties.bind.DefaultValue;
+
 
 import javax.persistence.*;
 import java.util.Date;

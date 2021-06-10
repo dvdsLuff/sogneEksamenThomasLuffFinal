@@ -9,13 +9,11 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
 
 @Controller
 public class WebController {
@@ -82,10 +80,6 @@ public class WebController {
                          @RequestParam("smittetryk") double smittetryk,
                          @RequestParam("nedlukningStart") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) Date nedlukningStart,
                          @RequestParam(value = "erNedlukket", defaultValue = "false") Boolean ernedlukket) {
-
-        System.out.println(ernedlukket);
-        System.out.println("blahlahllhalrelhaelhlrthlrtlhalrthltrhlarthl");
-//            b = ernedlukket.equals("true");
 
         Sogne nsogne = new Sogne(id, sognekode, navn, kommune, smittetryk, nedlukningStart, ernedlukket);
         sogneRepository.save(nsogne);
